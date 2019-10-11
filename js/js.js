@@ -1273,6 +1273,7 @@ var Game = {
 		this.enemyParent.appendChild(oEnemy);
 	},
 	delOneEnemy: function (enemyElem) { // 单个敌人死亡
+		this.ses.kick.play();
 		var This = this;
 		enemyElem.die = true;
 		addClass(enemyElem, 'die')
